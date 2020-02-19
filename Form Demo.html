@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #comment{
+            background-color: blueviolet;}
+        #username{
+            background-color: cadetblue;
+        }
+        #password{
+            background-color: cornflowerblue;
+        }
+        #chkbx{
+            color:blue;
+        }
+        #maj33{
+            color: darkslateblue;
+        }
+        #maj22{
+            color: aqua;
+        }
+        #maj11{
+            color: azure;
+        }
+        #maj1{
+            color: mediumslateblue;
+        }
+        #maj2{
+            color: steelblue;
+        }
+        #maj3{
+            color: antiquewhite;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Form Demo</title>
+</head>
+<body>
+
+<form action="http://example.com/join.php">
+<p> Username:
+    <input type="text" name="username" id="username" size="15" maxlength="7"/></p>
+   <p> Password:
+       <input type="password" name="username" id="password" size="15" maxlength="7"/></p>
+    <p><textarea name="Comment" id="comment" cols="10" rows="4"> Put some words here, bro...</textarea></p>
+    <p>What's your major?: <br>
+        <input type="radio" name="major" id="maj1" value="Information Systems"> IS
+        <input type="radio" name="major" id="maj2" value="Political Science" checked="checked"> Poli Sci (the coolest major)
+        <input type="radio" name="major" id="maj3" value="Journalism"> Journalism</p>
+    <p>What's the best major? <br>
+        <input type="checkbox" name="majors" id="maj11" value="Information Systems"> IS
+        <input type="checkbox" name="majors" id="maj22" value="Political Science" checked="checked"> Poli Sci (the coolest major)
+        <input type="checkbox" name="majors" id="maj33" value="Journalism"> Journalism</p>
+    <p>Pick a major my good sis. <br>
+        <select name="majorss" id="chkbx">
+            <option value=" blank" selected="selected"> </option>
+            <option value="Information Systems"> Info Systems</option>
+            <option value="Poli Sci"> Poli Sci</option>
+            <option value="Journalism"> Journal</option>
+        </select> </p>
+</form>
+<form action="http://eg.com/upload.php" method="post" id="file">
+    <p>Upload your song bro:</p>
+    <input type="file" name="MP3">
+    <input type="submit" value="Click on this bro">
+</form>
+</body>
+</html>
